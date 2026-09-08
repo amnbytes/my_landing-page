@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 :root {
@@ -11,22 +12,24 @@
   --backgroundbrown: #1e1816;
   --lightblueishgray: #111827;
   --secondary-text: #b8bfc4;
-  --secondary-wrapper:                                               
+  --secondary-wrapper:                                                                                                                                                                                                                                                                                                           
 ;
 }
 body {
   font-family: sans-serif;
   width: 100vw;
   background-color: var(--primarydarkblue);
+  color: #fff;
 }
 /*####################################### HEADER STARTS HERE  #######################################*/
 .header {
-  background-color: var(--primarydarkblue);
-  opacity: 0.8;
-  backdrop-filter: blur(10px);
+  background-color: rgb(3 7 18) / 10;
+  /* opacity: 0.9; */
+  z-index: 100;
+  backdrop-filter: blur(50px);
   height: 9vh;
   margin-bottom: 9vh;
-  color: #fff;
+  /* color: #fff; */
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -76,7 +79,7 @@ body {
 }
 .nav-ul li {
   list-style-type: none;
-  color: #fff;
+  /* color: #fff; */
   font-weight: bold;
 }
 .nav-ul li a {
@@ -86,7 +89,7 @@ body {
   font-size: 14px;
 }
 .nav-ul li a:hover {
-  color: #fff;
+  /* color: #fff; */
   transition: 0.3s;
 }
 .header-misc {
@@ -120,7 +123,7 @@ footer {
 /* ############################ FOOTER CONTACT INFO STARTS HERE  ################### */
 .footer-logo {
   font-size: 35px;
-  color: #fff;
+  /* color: #fff; */
   padding: 15px;
 }
 .footer-logo-text-1 {
@@ -152,7 +155,7 @@ footer {
   color: var(--secondary-text);
 }
 .email-text:hover {
-  color: #fff;
+  /* color: #fff; */
   transition: 0.3s;
 }
 .phone-icon,
@@ -188,14 +191,14 @@ svg {
 .insta-link-icon:hover svg,
 .pinterest-link-icon:hover svg,
 .linkedin-link-icon:hover svg {
-  fill: #fff;
+  /* fill: #fff; */
   transition: 0.3s;
 }
 .insta-icon,
 .pinterest-icon,
 .linkedin-icon {
   height: 25px;
-  color: #fff;
+  /* color: #fff; */
 }
 /* ############################ FOOTER CONTACT INFO ENDS HERE  ################### */
 
@@ -207,7 +210,7 @@ svg {
   gap: 15px;
 }
 .footer-services-info h3 {
-  color: #fff;
+  /* color: #fff; */
 }
 .footer-services-info ul {
 }
@@ -235,7 +238,7 @@ svg {
   gap: 15px;
 }
 .footer-resources-info h3 {
-  color: #fff;
+  /* color: #fff; */
 }
 .footer-resources-info ul {
 }
@@ -263,7 +266,7 @@ svg {
   gap: 15px;
 }
 .footer-company-info h3 {
-  color: #fff;
+  /* color: #fff; */
 }
 .footer-company-info ul {
 }
@@ -309,3 +312,99 @@ svg {
   transition: 0.3s;
 }
 /*####################################### FOOTER ENDS HERE /*#######################################*/
+
+/* ################################################ Main starts here ################################################ */
+main {
+  width: 100vw;
+}
+.p-class {
+  margin-top: 9vh;
+  background-color: purple;
+}
+.building-svg {
+  fill: var(--lightbrown);
+  height: 25px;
+}
+.landing-section {
+  width: 100vw;
+  margin-top: 9vh;
+  height: 90vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/main-landing.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section-main-div {
+  /* background-color: greenyellow; */
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-top-icon-div {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  background-color: rgb(255 255 255 / 25%);
+  backdrop-filter: blur(10px);
+
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: var(--secondary-text);
+  align-items: center;
+}
+.section-top-info-div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-top-info-div-h2 {
+  font-size: 90px;
+  /* background-color: maroon; */
+  padding: 15px 0px;
+  font-family: "Cormorant Garamond", serif;
+}
+.section-top-info-div-p {
+  color: var(--secondary-text);
+  font-size: 22px;
+  margin: 20px 0px;
+  width: 80%;
+  padding: 20px 0px;
+}
+.section-top-info-div-category {
+  display: flex;
+  gap: 10px;
+}
+.section-top-info-div-category p {
+  padding: 12px 20px;
+  background-color: rgb(255 255 255 / 25%);
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+}
+.section-top-info-div-formore {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  gap: 40px;
+}
+.section-top-info-div-formore p:nth-child(1) {
+  background-color: var(--lightbrown);
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  border-radius: 50px;
+  gap: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.section-top-info-div-formore p:nth-child(2) {
+  padding: 12px 20px;
+  background-color: rgb(255 255 255 / 25%);
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+}
