@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lightbrown: #a87a2a;
+  --primarydarkblue: #030712;
+  --lightbrowntext: #917441;
+  --backgroundbrown: #1e1816;
+  --lightblueishgray: #111827;
+  --secondary-text: #b8bfc4;
+  --secondary-wrapper:                                               
+;
+}
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  background-color: var(--primarydarkblue);
+}
+/*####################################### HEADER STARTS HERE  #######################################*/
+.header {
+  background-color: var(--primarydarkblue);
+  opacity: 0.8;
+  backdrop-filter: blur(10px);
+  height: 9vh;
+  margin-bottom: 9vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  /* width: 100%; */
+  margin: 0 auto;
+  border-bottom: 1px solid var(--secondary-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  text-decoration: none;
+  width: 20%;
+
+  text-align: center;
+}
+
+.header-logo-text {
+  font-size: 30px;
+
+  color: #fff;
+}
+.logo-text-1 {
+  font-family: "Gideon Roman", serif;
+  text-decoration: none;
+}
+.logo-text-2 {
+  font-family: "Cormorant Garamond", serif;
+}
+.header-nav {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.nav-ul {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  /* background: rebeccapurple; */
+}
+.nav-ul li {
+  list-style-type: none;
+  color: #fff;
+  font-weight: bold;
+}
+.nav-ul li a {
+  text-decoration: none;
+  color: var(--secondary-text);
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.nav-ul li a:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+.header-misc {
+  /* width: 0%; */
+  background-color: var(--lightbrown);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 800;
+}
+.header-misc:hover {
+  background-color: #6b4709;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* ####################################### HEADER ENDS HERE ####################################### */
+
+/*####################################### FOOTER STARTS HERE /*#######################################*/
+
+footer {
+  background-color: var(--primarydarkblue);
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px 0px;
+}
+.upper-footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+/* ############################ FOOTER CONTACT INFO STARTS HERE  ################### */
+.footer-logo {
+  font-size: 35px;
+  color: #fff;
+  padding: 15px;
+}
+.footer-logo-text-1 {
+  font-family: "Gideon Roman", serif;
+  text-decoration: none;
+}
+.footer-logo-text-2 {
+  font-family: "Cormorant Garamond", serif;
+}
+.footer-contact-info {
+  width: 20%;
+  line-height: 22px;
+}
+.footer-description {
+  color: var(--secondary-text);
+  padding: 20px 15px;
+  /* font-weight: 50; */
+}
+.footer-number,
+.footer-message,
+.footer-location {
+  color: var(--secondary-text);
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+}
+.email-text {
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+.email-text:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+.phone-icon,
+.email-text,
+.location-icon {
+  height: 2px;
+  text-align: center;
+}
+
+svg {
+  fill: var(--secondary-text);
+  padding-top: 3px;
+}
+
+.insta-link-icon,
+.pinterest-link-icon,
+.linkedin-link-icon {
+  padding: 8px 13px;
+  border: 1px solid --secondary-text;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #1f2937;
+  margin: 0px 8px;
+}
+.insta-link-icon:hover,
+.pinterest-link-icon:hover,
+.linkedin-link-icon:hover {
+  background-color: #465366;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.insta-link-icon:hover svg,
+.pinterest-link-icon:hover svg,
+.linkedin-link-icon:hover svg {
+  fill: #fff;
+  transition: 0.3s;
+}
+.insta-icon,
+.pinterest-icon,
+.linkedin-icon {
+  height: 25px;
+  color: #fff;
+}
+/* ############################ FOOTER CONTACT INFO ENDS HERE  ################### */
+
+/* ############################ FOOTER SERVICE INFO STARTS HERE  ################### */
+
+.footer-services-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-services-info h3 {
+  color: #fff;
+}
+.footer-services-info ul {
+}
+.footer-services-info li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+.footer-services-info ul li a {
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+.footer-services-info ul li a:hover {
+  color: #fff;
+
+  transition: 0.3s;
+}
+
+/* ############################ FOOTER SERVICE INFO ENDS HERE  ################### */
+
+/* ############################ FOOTER RESOURCES INFO STARTS HERE  ################### */
+
+.footer-resources-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-resources-info h3 {
+  color: #fff;
+}
+.footer-resources-info ul {
+}
+.footer-resources-info li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+.footer-resources-info ul li a {
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+.footer-resources-info ul li a:hover {
+  color: #fff;
+
+  transition: 0.3s;
+}
+
+/* ############################ FOOTER RESOURCES INFO ENDS HERE  ################### */
+
+/* ############################ FOOTER COMPANY INFO STARTS HERE  ################### */
+
+.footer-company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-company-info h3 {
+  color: #fff;
+}
+.footer-company-info ul {
+}
+.footer-company-info li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+.footer-company-info ul li a {
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+.footer-company-info ul li a:hover {
+  color: #fff;
+
+  transition: 0.3s;
+}
+
+/* ############################ FOOTER COMPANY INFO ENDS HERE  ################### */
+
+/* ################################# BOTTOM FOOTER CONTENT ########################### */
+.bottom-footer-content {
+  color: var(--secondary-text);
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0px;
+  border-top: 0.1px solid var(--secondary-text);
+  padding: 35px 0px;
+}
+.bottom-footer-content ul {
+  display: flex;
+  gap: 40px;
+}
+.bottom-footer-links ul li {
+  list-style-type: none;
+}
+.bottom-footer-links a {
+  text-decoration: none;
+  color: var(--secondary-text);
+  gap: 10px;
+}
+.bottom-footer-links a:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+/*####################################### FOOTER ENDS HERE /*#######################################*/
